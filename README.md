@@ -1,4 +1,4 @@
-#CIS445_545_HW2: website for my Profile
+CIS445_545_HW2: website for my Profile
 Overview:
 This project was developed as part of the coursework for CIS 445/545 at Bradley University. It focuses on web application development, emphasizing the use of HTML, CSS, and server-side technologies. The application showcases various web development concepts including form handling, dynamic content generation, and responsive design.
 
