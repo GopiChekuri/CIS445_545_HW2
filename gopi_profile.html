@@ -6,46 +6,71 @@
     <title>Gopi Krishna Chekuri - Profile</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f8f9fa;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            background-color: #f0f2f5;
             color: #343a40;
             margin: 0;
             padding: 0;
+            line-height: 1.6;
         }
 
         .container {
             max-width: 900px;
-            margin: 20px auto;
+            margin: 40px auto;
             background-color: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
         }
 
         header {
             text-align: center;
-            margin-bottom: 30px;
+            margin-bottom: 40px;
         }
 
         header h1 {
-            font-size: 36px;
-            margin-bottom: 5px;
+            font-size: 48px;
+            margin-bottom: 10px;
             color: #007bff;
         }
 
         header p {
-            font-size: 18px;
+            font-size: 20px;
             color: #6c757d;
         }
 
-        section {
-            margin-bottom: 30px;
+        .btn-container {
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            margin: 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .btn:hover {
+            background-color: #0056b3;
+        }
+
+        .section-box {
+            margin-bottom: 40px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background-color: #fafafa;
         }
 
         h2 {
-            font-size: 26px;
-            border-bottom: 2px solid #343a40;
-            padding-bottom: 5px;
+            font-size: 28px;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 10px;
             margin-bottom: 20px;
             color: #007bff;
         }
@@ -56,17 +81,21 @@
         }
 
         ul li {
-            margin-bottom: 10px;
-            font-size: 16px;
+            margin-bottom: 12px;
+            font-size: 18px;
+        }
+
+        ul li strong {
+            color: #007bff;
         }
 
         footer {
             text-align: center;
-            padding: 15px;
-            background-color: #343a40;
+            padding: 20px;
+            background-color: #007bff;
             color: #fff;
             margin-top: 30px;
-            border-radius: 0 0 8px 8px;
+            border-radius: 0 0 10px 10px;
         }
 
         a {
@@ -77,6 +106,25 @@
         a:hover {
             text-decoration: underline;
         }
+
+        /* Responsive Design */
+        @media only screen and (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+
+            header h1 {
+                font-size: 36px;
+            }
+
+            h2 {
+                font-size: 24px;
+            }
+
+            ul li {
+                font-size: 16px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -84,67 +132,83 @@
         <header>
             <h1>Gopi Krishna Chekuri</h1>
             <p>Software Developer Engineer | Master's in Computer Science Student</p>
+            <div class="btn-container">
+                <button class="btn">Download Resume</button>
+                <button class="btn">Contact Me</button>
+            </div>
         </header>
 
-        <section class="contact-info">
-            <h2>Contact Information</h2>
-            <ul>
-                <li><strong>Address:</strong> 1115 N Underhill, Apt-E, Peoria, IL 61606</li>
-                <li><strong>Phone:</strong> +1 (309) 222-6033</li>
-                <li><strong>Email:</strong> <a href="mailto:gopichekuri008@gmail.com">gopichekuri008@gmail.com</a></li>
-            </ul>
-        </section>
+        <div class="section-box">
+            <section class="contact-info">
+                <h2>Contact Information</h2>
+                <ul>
+                    <li><strong>Address:</strong> 1115 N Underhill, Apt-E, Peoria, IL 61606</li>
+                    <li><strong>Phone:</strong> +1 (309) 222-6033</li>
+                    <li><strong>Email:</strong> <a href="mailto:gopichekuri008@gmail.com">gopichekuri008@gmail.com</a></li>
+                </ul>
+            </section>
+        </div>
 
-        <section class="education">
-            <h2>Education</h2>
-            <ul>
-                <li><strong>Bradley University</strong> - Master of Science in Computer Science (Expected Graduation: May 2025)</li>
-                <li><strong>Sathyabama University</strong> - Bachelor of Engineering in Computer Science (C.G.P.A: 7.5/10, May 2022)</li>
-                <li><strong>Narayana Junior College</strong> - 10+2 (Intermediate - MPC, C.G.P.A: 9.3/10)</li>
-            </ul>
-        </section>
+        <div class="section-box">
+            <section class="education">
+                <h2>Education</h2>
+                <ul>
+                    <li><strong>Bradley University</strong> - Master of Science in Computer Science (Expected Graduation: May 2025)</li>
+                    <li><strong>Sathyabama University</strong> - Bachelor of Engineering in Computer Science (C.G.P.A: 7.5/10, May 2022)</li>
+                    <li><strong>Narayana Junior College</strong> - 10+2 (Intermediate - MPC, C.G.P.A: 9.3/10)</li>
+                </ul>
+            </section>
+        </div>
 
-        <section class="skills">
-            <h2>Skills</h2>
-            <ul>
-                <li><strong>Java & Spring Boot</strong>: Core and Advanced Java, MVC, Eclipse, Spring Boot, Maven.</li>
-                <li><strong>Python</strong>: Data analysis, Machine learning (Pandas, NumPy, TensorFlow).</li>
-                <li><strong>HTML, CSS, JavaScript, Angular</strong>: Front-end web development.</li>
-                <li><strong>SQL</strong>: MySQL, PostgreSQL.</li>
-                <li><strong>Git</strong>: Version control, code management.</li>
-                <li><strong>JIRA</strong>: Project management, sprints, task tracking.</li>
-                <li><strong>AI & ML</strong>: Generative AI, Machine Learning algorithms.</li>
-            </ul>
-        </section>
+        <div class="section-box">
+            <section class="skills">
+                <h2>Skills</h2>
+                <ul>
+                    <li><strong>Java & Spring Boot</strong>: Core and Advanced Java, MVC, Eclipse, Spring Boot, Maven.</li>
+                    <li><strong>Python</strong>: Data analysis, Machine learning (Pandas, NumPy, TensorFlow).</li>
+                    <li><strong>HTML, CSS, JavaScript, Angular</strong>: Front-end web development.</li>
+                    <li><strong>SQL</strong>: MySQL, PostgreSQL.</li>
+                    <li><strong>Git</strong>: Version control, code management.</li>
+                    <li><strong>JIRA</strong>: Project management, sprints, task tracking.</li>
+                    <li><strong>AI & ML</strong>: Generative AI, Machine Learning algorithms.</li>
+                </ul>
+            </section>
+        </div>
 
-        <section class="work-experience">
-            <h2>Work Experience</h2>
-            <ul>
-                <li><strong>Software Developer Engineer</strong> - SIEMENS, Pune, India (July 2022 - June 2023)
-                    <ul>
-                        <li>Developed Java classes, business logic, and MVC applications with Spring Boot.</li>
-                        <li>Maintained code standards and performed unit testing.</li>
-                        <li>Collaborated with business analysts, followed Agile methodologies.</li>
-                    </ul>
-                </li>
-            </ul>
-        </section>
+        <div class="section-box">
+            <section class="work-experience">
+                <h2>Work Experience</h2>
+                <ul>
+                    <li><strong>Software Developer Engineer</strong> - SIEMENS, Pune, India (July 2022 - June 2023)
+                        <ul>
+                            <li>Developed Java classes, business logic, and MVC applications with Spring Boot.</li>
+                            <li>Maintained code standards and performed unit testing.</li>
+                            <li>Collaborated with business analysts, followed Agile methodologies.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+        </div>
 
-        <section class="projects">
-            <h2>Projects</h2>
-            <ul>
-                <li><strong>CBTC (Communication-Based Train Control)</strong>: Developed platform modules for rail automation with Spring Boot and Angular.</li>
-                <li><strong>E-Commerce Website</strong>: Developed a full-stack e-commerce application with Java, Spring Boot, Angular.</li>
-            </ul>
-        </section>
+        <div class="section-box">
+            <section class="projects">
+                <h2>Projects</h2>
+                <ul>
+                    <li><strong>CBTC (Communication-Based Train Control)</strong>: Developed platform modules for rail automation with Spring Boot and Angular.</li>
+                    <li><strong>E-Commerce Website</strong>: Developed a full-stack e-commerce application with Java, Spring Boot, Angular.</li>
+                </ul>
+            </section>
+        </div>
 
-        <section class="certificates">
-            <h2>Certificates</h2>
-            <ul>
-                <li><strong>Java Full Stack</strong> - Udemy (Jan 2023 - Mar 2023)</li>
-                <li><strong>Problem Solving Skills</strong> - Hacker Rank</li>
-            </ul>
-        </section>
+        <div class="section-box">
+            <section class="certificates">
+                <h2>Certificates</h2>
+                <ul>
+                    <li><strong>Java Full Stack</strong> - Udemy (Jan 2023 - Mar 2023)</li>
+                    <li><strong>Problem Solving Skills</strong> - Hacker Rank</li>
+                </ul>
+            </section>
+        </div>
 
         <footer>
             <p>&copy; 2024 Gopi Krishna Chekuri</p>
