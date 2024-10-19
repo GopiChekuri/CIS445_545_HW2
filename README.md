@@ -6,7 +6,6 @@ This project was developed as part of the coursework for CIS 445/545 at Bradley 
 ## Features
 - **Responsive Web Design**: The application is designed to be mobile-friendly with a responsive layout.
 - **Form Handling**: Users can input data into forms, which is processed and displayed dynamically.
-- **Client-Side Interactivity**: JavaScript is used for form validation, dynamic content loading, and improving the user experience.
 - **Styling**: CSS is used to style the web pages and create an engaging user interface.
 
 ## Technologies Used
